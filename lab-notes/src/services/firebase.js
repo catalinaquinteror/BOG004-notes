@@ -1,6 +1,8 @@
 //Aqui voy a dejar las funciones de firebase y las exporto e importo en login signIn y sign out(?)
 import { GoogleAuthProvider, getAuth, signInWithRedirect, getRedirectResult, signInWithPopup, signOut } from "firebase/auth";
 import firebaseConfig from './firebaseConfig';
+import { db } from "./firebaseConfig";
+import { getFirestore, collection, addDoc, getDoc, onSnapshot, updateDoc, doc, deleteDoc } from 'firebase/firestore';
 const provider = new GoogleAuthProvider();
 const auth = getAuth();
 
