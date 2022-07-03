@@ -9,7 +9,7 @@ export const CreateNewNoteButton = (props) => {
 
 
     return (
-        <button onClick={() => onClickButton("Aquí se debería abrir el modal para la nueva nota")}>
+        <button onClick={() => onClickButton("modal")}>
                 +
         </button>
     );
