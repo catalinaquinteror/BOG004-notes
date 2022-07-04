@@ -4,7 +4,7 @@
 
 import { Logout } from "./Logout";
 import { Note } from "components/Note";
-import { Button } from "components/Button";
+import { ButtonLogin } from "components/ButtonLogin";
 import { CreateNewNoteButton } from "components/NewNoteButton";
 
 import React, { useState } from "react";
@@ -16,9 +16,9 @@ import { loginWithGoogle, LogOut } from "services/firebase";
 
 export const Timeline = (props) => {
      const notes = [
-        { text: "hola" },
-        { text: "hola2" },
-        { text: "hola3" },
+        // { text: "hola" },
+        // { text: "hola2" },
+        // { text: "hola3" },
       ];
     const navigate = useNavigate();
 

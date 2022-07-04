@@ -1,16 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/NewNoteButton.css";
+import { Modal } from  "components/Modal";
 
-export const CreateNewNoteButton = (props) => {
-    const onClickButton = (msg) => {
-        alert(msg);
-};
-
-
+export const CreateNewNoteButton = () => {
+    const [openModal, setOpenModal] = useState(false)
 
     return (
-        <button onClick={() => onClickButton("modal")}>
-                +
-        </button>
+        <div><button className="modalBtn" onClick={() => setOpenModal(true)}>+</button><Modal open={openModal} onClose={()=> setOpenModal(false)} /></div>
     );
 };
