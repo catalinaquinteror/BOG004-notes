@@ -1,3 +1,9 @@
 .txtArea {
     background-color: #00B894;
+    width: 560px;
+    height: 250px;
+    padding-left: -100px;
+    margin-left: -190px;
+    margin-top: 100px;
+    outline: none;
 }

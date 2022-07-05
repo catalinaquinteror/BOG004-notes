@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/modal.css"
 import { Note } from "./Note";
 
-export const Modal = ({open, onClose}) => {
+export const Modal = ({open, onClose, onSave}) => {
     if(!open) return null;
     return(
         <div onClick={onClose} className="overlay">
@@ -14,7 +14,7 @@ export const Modal = ({open, onClose}) => {
                     <Note></Note>
                     </div>
                     <div className="btnContaainer">
-                        <button className="btnPrimary">
+                        <button onClick={onSave} className="btnPrimary">
                             <span className="bold">Create</span>
                         </button>
                         <button onClick={onClose} className="btnOutline">

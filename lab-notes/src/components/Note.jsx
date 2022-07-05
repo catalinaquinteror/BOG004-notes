@@ -8,14 +8,13 @@ import '../styles/Note.css';
 //   { text: "hola3" },
 // ];
 
-export const Note = ({ text }) => {
+export const Note = ({ text , open , onClose, onSave}) => {
   return (
     <form>
       <label></label>
       <textarea className="txtArea"
-        placeholder=""
+        placeholder="Write here"
       />
-
     </form>
     // <li>
     //   <span>{text}</span>
